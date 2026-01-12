@@ -1,0 +1,2132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.95, maximum-scale=5.0, user-scalable=yes">
+    
+    <!-- App Version -->
+    <meta name="app-version" content="7.0.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="DSOG - Empowering businesses, startups, and young entrepreneurs through training, events, and startup opportunities. Shape your business acuity with us.">
+    <meta name="keywords" content="DSOG, entrepreneurship, business training, startup opportunities, young entrepreneurs, business events, professional training, enterprise development">
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#C21807">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="DSOG">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="DSOG">
+    <meta name="msapplication-TileColor" content="#C21807">
+    <meta name="msapplication-starturl" content="/index.html?v=7.0.0">
+    
+    <!-- Updated Open Graph Meta Tags -->
+    <meta property="og:title" content="DSOG | Empowering Businesses, Startups & Young Entrepreneurs">
+    <meta property="og:description" content="Empower your business journey with DSOG. We provide training, events, and startup opportunities to help entrepreneurs build successful enterprises.">
+    <meta property="og:image" content="https://i.postimg.cc/CxNLzQgt/Untitled-design-3.webp">
+    <meta property="og:url" content="https://dsog.org">
+    <meta property="og:type" content="website">
+    
+    <title>DSOG | Empowering Businesses, Startups & Young Entrepreneurs</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts for Professional Look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Advanced Styling with Perfect Alignment -->
+    <style>
+        /* ===== CSS CUSTOM PROPERTIES ===== */
+        :root {
+            /* Professional Color Palette */
+            --primary-red: #C21807;
+            --primary-dark: #1A1A1A;
+            --primary-gold: #D4AF37;
+            --secondary-red: #E53935;
+            --secondary-dark: #2D2D2D;
+            --accent-blue: #2C5282;
+            --accent-green: #2D7D46;
+            
+            /* Neutral Colors */
+            --white: #FFFFFF;
+            --light-gray: #F8F9FA;
+            --medium-gray: #E9ECEF;
+            --dark-gray: #6C757D;
+            --black: #212529;
+            
+            /* Light Mode Colors */
+            --bg-primary: var(--white);
+            --bg-secondary: var(--light-gray);
+            --bg-tertiary: var(--medium-gray);
+            --text-primary: var(--black);
+            --text-secondary: var(--dark-gray);
+            --text-tertiary: #868E96;
+            --border-color: #DEE2E6;
+            --card-bg: var(--white);
+            --footer-bg: var(--primary-dark);
+            
+            /* Professional Shadow System */
+            --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.03);
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+            --shadow-xl: 0 20px 25px -5px rgba(194, 24, 7, 0.05), 0 10px 10px -5px rgba(194, 24, 7, 0.02);
+            --shadow-2xl: 0 25px 50px -12px rgba(194, 24, 7, 0.15);
+            --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.04);
+            
+            /* Advanced Gradients */
+            --gradient-primary: linear-gradient(135deg, #C21807 0%, #E53935 100%);
+            --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #F4D03F 100%);
+            --gradient-dark: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 100%);
+            --gradient-light: linear-gradient(135deg, var(--white) 0%, #F8F9FA 100%);
+            --gradient-card: linear-gradient(145deg, var(--white) 0%, #F8F9FA 100%);
+            
+            /* Animation Properties */
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            --transition-fast: all 0.15s ease-out;
+            --transition-slow: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            
+            /* Border Radius System */
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 14px;
+            --radius-xl: 18px;
+            --radius-2xl: 22px;
+            --radius-full: 9999px;
+            
+            /* Spacing System - Consistent Units */
+            --space-3xs: 0.125rem;  /* 2px */
+            --space-2xs: 0.25rem;   /* 4px */
+            --space-xs: 0.5rem;     /* 8px */
+            --space-sm: 0.75rem;    /* 12px */
+            --space-md: 1rem;       /* 16px */
+            --space-lg: 1.5rem;     /* 24px */
+            --space-xl: 2rem;       /* 32px */
+            --space-2xl: 3rem;      /* 48px */
+            --space-3xl: 4rem;      /* 64px */
+            --space-4xl: 6rem;      /* 96px */
+            --space-5xl: 8rem;      /* 128px */
+            
+            /* Professional Typography */
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            --font-heading: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            
+            /* Layout Variables - Fixed Values */
+            --header-height: 72px;
+            --container-width: 1320px;
+            --nav-item-spacing: 2.5rem;
+            --logo-size: 40px;
+            
+            /* Glass Morphism */
+            --glass-bg: rgba(255, 255, 255, 0.92);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+            
+            /* Z-index Layers */
+            --z-negative: -1;
+            --z-normal: 1;
+            --z-dropdown: 100;
+            --z-sticky: 200;
+            --z-fixed: 1000;
+            --z-modal: 10000;
+            --z-tooltip: 100000;
+        }
+
+        /* Dark Theme Variables */
+        [data-theme="dark"] {
+            --bg-primary: #121212;
+            --bg-secondary: #1E1E1E;
+            --bg-tertiary: #2D2D2D;
+            --card-bg: #1E1E1E;
+            --text-primary: #F5F5F5;
+            --text-secondary: #B0B0B0;
+            --text-tertiary: #808080;
+            --border-color: #404040;
+            --footer-bg: #0A0A0A;
+            --glass-bg: rgba(30, 30, 30, 0.92);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --gradient-light: linear-gradient(135deg, #1E1E1E 0%, #2D2D2D 100%);
+            --gradient-card: linear-gradient(145deg, #1E1E1E 0%, #252525 100%);
+            --white: #1E1E1E;
+            --light-gray: #2D2D2D;
+            --medium-gray: #404040;
+        }
+
+        /* ===== CSS RESET & BASE STYLES ===== */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+            scroll-padding-top: calc(var(--header-height) + 20px);
+            text-rendering: optimizeLegibility;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+            overflow-x: hidden;
+            transition: var(--transition-smooth);
+            position: relative;
+            min-height: 100vh;
+            font-size: 0.9375rem; /* 15px */
+            font-weight: 400;
+            letter-spacing: 0.01em;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-secondary);
+            border-radius: var(--radius-full);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--gradient-primary);
+            border-radius: var(--radius-full);
+            border: 2px solid var(--bg-secondary);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary-red);
+        }
+
+        /* Selection Color */
+        ::selection {
+            background: rgba(194, 24, 7, 0.2);
+            color: var(--text-primary);
+        }
+
+        /* ===== PERFECTLY ALIGNED HEADER ===== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: var(--header-height);
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border-bottom: 1px solid var(--border-color);
+            z-index: var(--z-fixed);
+            transition: var(--transition-smooth);
+            box-shadow: var(--shadow-sm);
+        }
+
+        [data-theme="dark"] .header {
+            border-bottom: 1px solid rgba(64, 64, 64, 0.8);
+        }
+
+        .header.scrolled {
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Navbar Container with Perfect Alignment */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--space-xl);
+            gap: var(--space-xl);
+        }
+
+        /* Logo with Perfect Alignment */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            text-decoration: none;
+            flex-shrink: 0;
+            padding: var(--space-xs) 0;
+            height: 100%;
+        }
+
+        .logo-image {
+            height: var(--logo-size);
+            width: auto;
+            object-fit: contain;
+            display: block;
+            transition: var(--transition-smooth);
+        }
+
+        [data-theme="dark"] .logo-image {
+            filter: brightness(0) invert(1);
+        }
+
+        .logo-text {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+            line-height: 1;
+            white-space: nowrap;
+        }
+
+        .logo-text span {
+            color: var(--primary-red);
+            font-weight: 700;
+        }
+
+        /* Main Navigation - Perfectly Aligned */
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: var(--nav-item-spacing);
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            height: 100%;
+        }
+
+        .nav-link {
+            position: relative;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875rem; /* 14px */
+            padding: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            transition: var(--transition-fast);
+            letter-spacing: 0.01em;
+            text-transform: none;
+            white-space: nowrap;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-primary);
+            transition: var(--transition-smooth);
+            border-radius: 1px;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-red);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link.active {
+            color: var(--primary-red);
+            font-weight: 600;
+        }
+
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        /* Contact Button Alignment */
+        .nav-links .btn-primary {
+            font-size: 0.875rem;
+            padding: var(--space-sm) var(--space-lg);
+            height: auto;
+            margin-left: var(--space-sm);
+            flex-shrink: 0;
+        }
+
+        /* Mobile Menu Button - Perfect Alignment */
+        .mobile-menu-btn {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            background: none;
+            border: none;
+            color: var(--primary-red);
+            font-size: 1.25rem;
+            cursor: pointer;
+            padding: var(--space-sm);
+            border-radius: var(--radius-md);
+            transition: var(--transition-smooth);
+            z-index: var(--z-dropdown);
+            width: 44px;
+            height: 44px;
+            flex-shrink: 0;
+        }
+
+        .mobile-menu-btn:hover {
+            background: var(--bg-tertiary);
+        }
+
+        /* ===== TYPOGRAPHY SYSTEM ===== */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            margin-bottom: var(--space-md);
+            color: var(--text-primary);
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+        }
+
+        h2 {
+            font-size: clamp(1.875rem, 4vw, 2.75rem);
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 600;
+        }
+
+        h4 {
+            font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+            font-weight: 600;
+        }
+
+        .text-gradient {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+        }
+
+        .lead {
+            font-size: clamp(1.125rem, 2vw, 1.25rem);
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-weight: 400;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        p {
+            margin-bottom: var(--space-md);
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-weight: 400;
+        }
+
+        .text-small {
+            font-size: 0.875rem;
+            color: var(--text-tertiary);
+            letter-spacing: 0.01em;
+        }
+
+        .text-center { text-align: center; }
+        .text-left { text-align: left; }
+        .text-right { text-align: right; }
+
+        .text-primary { color: var(--primary-red); }
+        .text-gold { color: var(--primary-gold); }
+        .text-accent { color: var(--accent-blue); }
+
+        /* ===== LAYOUT & CONTAINERS ===== */
+        .container {
+            width: 100%;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--space-xl);
+        }
+
+        .container-wide {
+            width: 100%;
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 0 var(--space-2xl);
+        }
+
+        section {
+            padding: var(--space-4xl) 0;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-3xl);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-header h2 {
+            position: relative;
+            display: inline-block;
+            margin-bottom: var(--space-lg);
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: var(--gradient-primary);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            color: var(--text-tertiary);
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-sm);
+            display: block;
+            font-weight: 600;
+        }
+
+        /* ===== BUTTON SYSTEM ===== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-sm);
+            padding: var(--space-md) var(--space-xl);
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-decoration: none;
+            border: 1px solid transparent;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+            letter-spacing: 0.02em;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: inherit;
+            z-index: -1;
+            opacity: 0.9;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: var(--white) !important;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-red);
+            border: 1px solid var(--primary-red);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-red);
+            color: var(--white) !important;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(194, 24, 7, 0.2);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary-red);
+            color: var(--primary-red);
+            transform: translateY(-2px);
+        }
+
+        .btn-small {
+            padding: var(--space-sm) var(--space-lg);
+            font-size: 0.85rem;
+        }
+
+        .btn-large {
+            padding: var(--space-lg) var(--space-2xl);
+            font-size: 1rem;
+        }
+
+        .btn-block {
+            width: 100%;
+            display: flex;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: var(--header-height);
+            position: relative;
+            overflow: hidden;
+            background: var(--gradient-light);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(194, 24, 7, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(212, 175, 55, 0.02) 0%, transparent 50%);
+            z-index: var(--z-negative);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: var(--z-normal);
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0 var(--space-xl);
+        }
+
+        .mission-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            background: var(--gradient-primary);
+            color: var(--white);
+            padding: var(--space-sm) var(--space-lg);
+            border-radius: var(--radius-full);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            margin-bottom: var(--space-xl);
+            box-shadow: var(--shadow-lg);
+            text-transform: uppercase;
+        }
+
+        .category-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-sm);
+            justify-content: center;
+            margin: var(--space-xl) 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .category-tag {
+            background: rgba(194, 24, 7, 0.08);
+            color: var(--primary-red);
+            padding: var(--space-xs) var(--space-md);
+            border-radius: var(--radius-full);
+            font-size: 0.8rem;
+            font-weight: 500;
+            border: 1px solid rgba(194, 24, 7, 0.15);
+            transition: var(--transition-smooth);
+            cursor: default;
+        }
+
+        .category-tag:hover {
+            background: rgba(194, 24, 7, 0.15);
+            transform: translateY(-1px);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: var(--space-md);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: var(--space-2xl);
+        }
+
+        /* ===== OUR APPROACH SECTION ===== */
+        .approach-section {
+            background: var(--bg-primary);
+        }
+
+        .approach-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-xl);
+            margin-top: var(--space-2xl);
+        }
+
+        .approach-card {
+            background: var(--gradient-card);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: var(--transition-smooth);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .approach-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient-primary);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s var(--transition-smooth);
+        }
+
+        .approach-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-red);
+        }
+
+        .approach-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .approach-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-primary);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            margin: 0 auto var(--space-lg);
+            flex-shrink: 0;
+        }
+
+        .approach-tag {
+            display: inline-block;
+            background: rgba(194, 24, 7, 0.1);
+            color: var(--primary-red);
+            padding: var(--space-2xs) var(--space-md);
+            border-radius: var(--radius-full);
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: var(--space-md);
+            letter-spacing: 0.05em;
+        }
+
+        /* ===== SERVICES OVERVIEW ===== */
+        .services-overview {
+            background: var(--bg-secondary);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--space-xl);
+            margin-top: var(--space-2xl);
+        }
+
+        .service-card {
+            background: var(--gradient-card);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: var(--transition-smooth);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient-primary);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s var(--transition-smooth);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-red);
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            color: var(--white);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: var(--space-lg);
+            flex-shrink: 0;
+        }
+
+        .service-tag {
+            display: inline-block;
+            background: rgba(194, 24, 7, 0.1);
+            color: var(--primary-red);
+            padding: var(--space-2xs) var(--space-md);
+            border-radius: var(--radius-full);
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: var(--space-md);
+            letter-spacing: 0.05em;
+            align-self: flex-start;
+        }
+
+        .service-features {
+            margin-top: var(--space-md);
+            list-style: none;
+            flex-grow: 1;
+        }
+
+        .service-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-sm);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .service-features i {
+            color: var(--primary-red);
+            margin-top: 0.2rem;
+            flex-shrink: 0;
+        }
+
+        /* ===== UPCOMING EVENTS SECTION ===== */
+        .events-section {
+            background: var(--bg-primary);
+        }
+
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-xl);
+            margin-top: var(--space-2xl);
+        }
+
+        .event-card {
+            background: var(--gradient-card);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: var(--transition-smooth);
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .event-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .event-content {
+            padding: var(--space-lg);
+        }
+
+        .event-date {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            color: var(--primary-red);
+            font-weight: 600;
+            margin-bottom: var(--space-sm);
+        }
+
+        /* ===== ABOUT DSOG SECTION ===== */
+        .about-dsog-section {
+            background: var(--bg-secondary);
+            position: relative;
+        }
+
+        .about-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-2xl);
+            align-items: center;
+        }
+
+        .about-content {
+            padding: var(--space-xl);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: var(--space-lg);
+            background: var(--gradient-card);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            transition: var(--transition-smooth);
+        }
+
+        .stat-item:hover {
+            transform: translateY(-4px);
+            border-color: var(--primary-red);
+            box-shadow: var(--shadow-md);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            line-height: 1;
+        }
+
+        /* ===== VALUE PROPOSITION ===== */
+        .value-proposition {
+            background: var(--bg-primary);
+        }
+
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-xl);
+            margin-top: var(--space-2xl);
+        }
+
+        .value-card {
+            text-align: center;
+            padding: var(--space-xl);
+        }
+
+        .value-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-card);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--space-lg);
+            font-size: 1.75rem;
+            color: var(--primary-red);
+            border: 1px solid var(--border-color);
+            transition: var(--transition-smooth);
+        }
+
+        .value-card:hover .value-icon {
+            transform: scale(1.1) rotate(5deg);
+            border-color: var(--primary-red);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* ===== CTA SECTION ===== */
+        .cta-section {
+            background: var(--gradient-primary);
+            color: var(--white);
+            padding: var(--space-4xl) 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--radius-xl);
+            margin: var(--space-4xl) auto;
+            max-width: 1200px;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255,255,255,0.05) 0%, transparent 50%);
+        }
+
+        .cta-section > * {
+            position: relative;
+            z-index: var(--z-normal);
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+        }
+
+        .cta-section .lead {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-xl);
+            flex-wrap: wrap;
+            margin-top: var(--space-2xl);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            color: var(--white);
+            background: rgba(255, 255, 255, 0.1);
+            padding: var(--space-lg);
+            border-radius: var(--radius-lg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: var(--transition-smooth);
+            min-width: 260px;
+        }
+
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .contact-icon {
+            background: rgba(255, 255, 255, 0.15);
+            color: var(--white);
+            width: 50px;
+            height: 50px;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--footer-bg);
+            color: var(--white);
+            padding: var(--space-4xl) 0 var(--space-xl);
+            position: relative;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient-primary);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: var(--space-xl);
+            margin-bottom: var(--space-xl);
+        }
+
+        .footer-logo {
+            height: 40px;
+            margin-bottom: var(--space-md);
+            filter: brightness(0) invert(1);
+        }
+
+        .footer-section h3 {
+            color: var(--primary-gold);
+            margin-bottom: var(--space-md);
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: var(--space-sm);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            transition: var(--transition-smooth);
+        }
+
+        .footer-section ul li:hover {
+            color: var(--white);
+            transform: translateX(4px);
+        }
+
+        .footer-section ul li a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: var(--space-xl);
+            margin-top: var(--space-xl);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.85rem;
+            max-width: var(--container-width);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ===== THEME TOGGLE ===== */
+        .theme-toggle {
+            position: fixed;
+            bottom: var(--space-xl);
+            right: var(--space-xl);
+            width: 52px;
+            height: 52px;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.1rem;
+            cursor: pointer;
+            z-index: var(--z-fixed);
+            box-shadow: var(--shadow-xl);
+            transition: var(--transition-smooth);
+            border: none;
+            outline: none;
+        }
+
+        .theme-toggle:hover {
+            transform: rotate(30deg) scale(1.05);
+            box-shadow: var(--shadow-2xl);
+        }
+
+        /* ===== ANIMATIONS ===== */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s var(--transition-smooth), 
+                        transform 0.6s var(--transition-smooth);
+        }
+
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== MOBILE NAVIGATION ===== */
+        @media (max-width: 1024px) {
+            .nav-links {
+                position: fixed;
+                top: var(--header-height);
+                left: 0;
+                right: 0;
+                background: var(--bg-primary);
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+                height: auto;
+                max-height: calc(100vh - var(--header-height));
+                overflow-y: auto;
+                padding: var(--space-md);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                            opacity 0.3s ease,
+                            visibility 0.3s ease;
+                box-shadow: var(--shadow-xl);
+                border-top: 1px solid var(--border-color);
+            }
+
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .nav-link {
+                height: auto;
+                padding: var(--space-md) var(--space-lg);
+                border-radius: var(--radius-md);
+                margin-bottom: var(--space-xs);
+                display: flex;
+                align-items: center;
+            }
+
+            .nav-link:hover {
+                background: var(--bg-tertiary);
+            }
+
+            .nav-link::after {
+                display: none;
+            }
+
+            .nav-links .btn-primary {
+                margin: var(--space-md) 0 0 0;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+                margin-left: auto;
+            }
+
+            .navbar {
+                gap: var(--space-md);
+                padding: 0 var(--space-lg);
+            }
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        
+        /* Tablet */
+        @media (max-width: 768px) {
+            :root {
+                --header-height: 64px;
+                --nav-item-spacing: 1.5rem;
+                --logo-size: 36px;
+            }
+
+            .navbar {
+                padding: 0 var(--space-lg);
+            }
+
+            .logo-text {
+                font-size: 1.25rem;
+            }
+
+            .hero {
+                padding-top: var(--header-height);
+            }
+
+            h1 { font-size: 2.25rem; }
+            h2 { font-size: 1.75rem; }
+            h3 { font-size: 1.5rem; }
+
+            .approach-grid,
+            .services-grid,
+            .events-grid,
+            .value-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: var(--space-md);
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .category-tags {
+                overflow-x: auto;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                padding-bottom: var(--space-sm);
+                margin: var(--space-lg) calc(var(--space-lg) * -1);
+                padding-left: var(--space-lg);
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+            }
+
+            .category-tags::-webkit-scrollbar {
+                display: none;
+            }
+
+            .category-tag {
+                flex-shrink: 0;
+                white-space: nowrap;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-item {
+                width: 100%;
+                max-width: 400px;
+                min-width: auto;
+            }
+
+            .theme-toggle {
+                bottom: var(--space-lg);
+                right: var(--space-lg);
+                width: 48px;
+                height: 48px;
+                font-size: 1rem;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 480px) {
+            :root {
+                --header-height: 60px;
+                --logo-size: 32px;
+            }
+
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+            h3 { font-size: 1.25rem; }
+
+            .container {
+                padding: 0 var(--space-md);
+            }
+
+            .hero {
+                padding-top: var(--header-height);
+            }
+
+            .mission-badge {
+                font-size: 0.75rem;
+                padding: var(--space-xs) var(--space-md);
+            }
+
+            .btn {
+                padding: var(--space-md) var(--space-lg);
+                font-size: 0.9rem;
+            }
+
+            .approach-card,
+            .service-card,
+            .event-card {
+                padding: var(--space-lg);
+            }
+
+            .contact-item {
+                padding: var(--space-md);
+                text-align: left;
+            }
+
+            .contact-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 1.1rem;
+            }
+
+            .theme-toggle {
+                bottom: var(--space-md);
+                right: var(--space-md);
+                width: 44px;
+                height: 44px;
+                font-size: 0.95rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Small Mobile */
+        @media (max-width: 360px) {
+            .logo-image {
+                height: 32px;
+            }
+            
+            .logo-text {
+                font-size: 1.1rem;
+            }
+            
+            h1 { font-size: 1.75rem; }
+            h2 { font-size: 1.25rem; }
+            h3 { font-size: 1.1rem; }
+            
+            .lead {
+                font-size: 1rem;
+            }
+            
+            .approach-card,
+            .service-card,
+            .event-card {
+                padding: var(--space-md);
+            }
+            
+            .btn {
+                padding: var(--space-sm) var(--space-md);
+                font-size: 0.85rem;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            .header,
+            .theme-toggle,
+            .mobile-menu-btn,
+            .hero-buttons,
+            .btn {
+                display: none !important;
+            }
+            
+            body {
+                background: white !important;
+                color: black !important;
+                font-size: 12pt !important;
+            }
+            
+            .hero {
+                min-height: auto;
+                padding: 2rem 0;
+            }
+            
+            section {
+                padding: 1.5rem 0;
+                break-inside: avoid;
+            }
+            
+            .service-card {
+                break-inside: avoid;
+                border: 1px solid #ddd;
+                box-shadow: none !important;
+                transform: none !important;
+            }
+            
+            a {
+                color: black !important;
+                text-decoration: underline;
+            }
+        }
+
+        /* Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            
+            .animate-on-scroll {
+                transition: none !important;
+            }
+        }
+
+        /* High Contrast Mode */
+        @media (prefers-contrast: high) {
+            :root {
+                --primary-red: #8B0000;
+                --primary-dark: #000000;
+                --primary-gold: #8B7500;
+                --text-primary: #000000;
+                --text-secondary: #333333;
+                --border-color: #000000;
+            }
+            
+            [data-theme="dark"] {
+                --text-primary: #FFFFFF;
+                --text-secondary: #CCCCCC;
+                --border-color: #FFFFFF;
+            }
+            
+            .btn {
+                border: 2px solid currentColor;
+            }
+            
+            .service-card {
+                border: 2px solid var(--border-color);
+            }
+        }
+
+        /* Touch Device Optimizations */
+        @media (hover: none) and (pointer: coarse) {
+            .service-card:hover,
+            .contact-item:hover,
+            .btn:hover,
+            .nav-link:hover {
+                transform: none;
+            }
+            
+            .btn:active,
+            .nav-link:active {
+                transform: scale(0.98);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Perfectly Aligned Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="https://i.postimg.cc/kMZ1jTww/Untitled-design-4-removebg-preview.png" 
+                     alt="DSOG" 
+                     class="logo-image">
+                <span class="logo-text">DSOG</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="enterprise.html" class="nav-link">Enterprise</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="training.html" class="nav-link">Training</a></li>
+                <li><a href="startups.html" class="nav-link">Startup Opportunities</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Contact Us</a></li>
+            </ul>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="mission-badge">
+                    <i class="fas fa-bullseye"></i> EMPOWERING BUSINESSES & ENTREPRENEURS
+                </div>
+                
+                <h1>Shape Your <span class="text-gradient">Business Acuity</span> with DSOG</h1>
+                <p class="lead">DSOG empowers businesses, startups, and young entrepreneurs through transformative training, impactful events, and real startup opportunities that turn learning into successful enterprises.</p>
+                
+                <div class="category-tags">
+                    <span class="category-tag">Business Training</span>
+                    <span class="category-tag">Entrepreneurship Events</span>
+                    <span class="category-tag">Startup Opportunities</span>
+                    <span class="category-tag">Professional Development</span>
+                    <span class="category-tag">Enterprise Growth</span>
+                    <span class="category-tag">Young Entrepreneurs</span>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="events.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-calendar-alt"></i> Upcoming Events
+                    </a>
+                    <a href="enterprise.html" class="btn btn-outline btn-large">
+                        <i class="fas fa-briefcase"></i> Explore Enterprise
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Approach Section -->
+    <section class="approach-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Methodology</span>
+                <h2>How We <span class="text-gradient">Empower Entrepreneurs</span></h2>
+                <p class="lead">We engage people through events aimed at shaping their business acuity, train professionals, and provide startup opportunities to practice what they've learned.</p>
+            </div>
+            
+            <div class="approach-grid">
+                <div class="approach-card animate-on-scroll">
+                    <div class="approach-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <span class="approach-tag">ENGAGEMENT</span>
+                    <h3>Transformative Events</h3>
+                    <p>We organize impactful events that engage entrepreneurs in hands-on experiences, networking opportunities, and practical business challenges that shape their business acuity.</p>
+                </div>
+                
+                <div class="approach-card animate-on-scroll">
+                    <div class="approach-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <span class="approach-tag">DEVELOPMENT</span>
+                    <h3>Professional Training</h3>
+                    <p>Comprehensive training programs designed to equip professionals and entrepreneurs with the skills needed to thrive in today's competitive business landscape.</p>
+                </div>
+                
+                <div class="approach-card animate-on-scroll">
+                    <div class="approach-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <span class="approach-tag">OPPORTUNITY</span>
+                    <h3>Startup Incubation</h3>
+                    <p>We provide real startup opportunities where entrepreneurs can practice what they've learned, turning theory into practice and ideas into successful enterprises.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Services</span>
+                <h2>Comprehensive <span class="text-gradient">Entrepreneurship Support</span></h2>
+                <p class="lead">From training to enterprise development, we offer a complete ecosystem for business growth and success.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Business Training -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <span class="service-tag">SKILL DEVELOPMENT</span>
+                    <h3>Professional Training</h3>
+                    <p>Tailored training programs covering business fundamentals, leadership, digital skills, and industry-specific knowledge to prepare you for entrepreneurial success.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Business Fundamentals & Strategy</li>
+                        <li><i class="fas fa-check"></i> Digital Marketing & E-commerce</li>
+                        <li><i class="fas fa-check"></i> Financial Management & Funding</li>
+                        <li><i class="fas fa-check"></i> Leadership & Team Building</li>
+                    </ul>
+                    <a href="training.html" class="btn btn-secondary btn-small" style="margin-top: var(--space-md);">
+                        View Training Programs <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Entrepreneurship Events -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-star"></i>
+                    </div>
+                    <span class="service-tag">NETWORKING & LEARNING</span>
+                    <h3>Entrepreneurship Events</h3>
+                    <p>Regular events, workshops, and networking sessions designed to connect entrepreneurs, share knowledge, and foster collaborative opportunities.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Business Pitch Competitions</li>
+                        <li><i class="fas fa-check"></i> Industry Networking Mixers</li>
+                        <li><i class="fas fa-check"></i> Expert Workshop Series</li>
+                        <li><i class="fas fa-check"></i> Annual Entrepreneurship Summit</li>
+                    </ul>
+                    <a href="events.html" class="btn btn-secondary btn-small" style="margin-top: var(--space-md);">
+                        See Upcoming Events <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Startup Support -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <span class="service-tag">GROWTH SUPPORT</span>
+                    <h3>Startup Opportunities</h3>
+                    <p>Practical startup opportunities with mentorship, resources, and support systems to help you launch and grow your business venture.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Business Incubation Programs</li>
+                        <li><i class="fas fa-check"></i> Mentorship & Advisory Services</li>
+                        <li><i class="fas fa-check"></i> Funding & Investment Connections</li>
+                        <li><i class="fas fa-check"></i> Market Access & Partnerships</li>
+                    </ul>
+                    <a href="startups.html" class="btn btn-secondary btn-small" style="margin-top: var(--space-md);">
+                        Explore Opportunities <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="events-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get Involved</span>
+                <h2>Upcoming <span class="text-gradient">Events & Workshops</span></h2>
+                <p class="lead">Join our transformative events designed to shape your business acuity and connect with like-minded entrepreneurs.</p>
+            </div>
+            
+            <div class="events-grid">
+                <div class="event-card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Entrepreneurship Summit" 
+                         class="event-image">
+                    <div class="event-content">
+                        <div class="event-date">
+                            <i class="fas fa-calendar"></i> March 15, 2024
+                        </div>
+                        <h4>Annual Entrepreneurship Summit</h4>
+                        <p>Join industry leaders and successful entrepreneurs for a day of inspiration, networking, and practical business insights.</p>
+                        <a href="events.html#summit" class="btn btn-primary btn-small" style="margin-top: var(--space-md);">
+                            Register Now <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="event-card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Business Pitch Competition" 
+                         class="event-image">
+                    <div class="event-content">
+                        <div class="event-date">
+                            <i class="fas fa-calendar"></i> April 5, 2024
+                        </div>
+                        <h4>Startup Pitch Competition</h4>
+                        <p>Pitch your business idea to investors and win funding, mentorship, and incubation support for your startup.</p>
+                        <a href="events.html#pitch" class="btn btn-primary btn-small" style="margin-top: var(--space-md);">
+                            Apply to Pitch <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="event-card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Digital Marketing Workshop" 
+                         class="event-image">
+                    <div class="event-content">
+                        <div class="event-date">
+                            <i class="fas fa-calendar"></i> March 22, 2024
+                        </div>
+                        <h4>Digital Marketing Masterclass</h4>
+                        <p>Learn cutting-edge digital marketing strategies to grow your business online and reach global markets.</p>
+                        <a href="events.html#workshop" class="btn btn-primary btn-small" style="margin-top: var(--space-md);">
+                            Join Workshop <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: var(--space-2xl);">
+                <a href="events.html" class="btn btn-outline btn-large">
+                    View All Events <i class="fas fa-calendar-alt"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About DSOG Section -->
+    <section id="about" class="about-dsog-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Organization</span>
+                <h2>About <span class="text-gradient">DSOG</span></h2>
+                <p class="lead">We are dedicated to empowering businesses, startups, and young entrepreneurs through comprehensive support systems and practical opportunities.</p>
+            </div>
+            
+            <div class="about-container">
+                <div class="about-content animate-on-scroll">
+                    <h3>Our Mission & Vision</h3>
+                    <p>DSOG exists to empower entrepreneurs with the knowledge, skills, and opportunities needed to build successful enterprises. We believe in transforming business ideas into reality through practical engagement and support.</p>
+                    <p>Our vision is to create a thriving ecosystem where every entrepreneur has access to the training, events, and startup opportunities needed to succeed in today's competitive business environment.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="text-small">Entrepreneurs Trained</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="text-small">Events Hosted</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">30+</div>
+                            <div class="text-small">Startups Supported</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-content animate-on-scroll">
+                    <h3>Our Impact</h3>
+                    <p>Through our comprehensive approach, we've helped numerous entrepreneurs and businesses achieve their goals:</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check text-primary"></i> Transformed business ideas into successful enterprises</li>
+                        <li><i class="fas fa-check text-primary"></i> Developed business acuity through hands-on events</li>
+                        <li><i class="fas fa-check text-primary"></i> Provided professional training to enhance skills</li>
+                        <li><i class="fas fa-check text-primary"></i> Created startup opportunities for practical experience</li>
+                        <li><i class="fas fa-check text-primary"></i> Built a supportive community of entrepreneurs</li>
+                        <li><i class="fas fa-check text-primary"></i> Facilitated networking and collaboration opportunities</li>
+                    </ul>
+                    <a href="about.html" class="btn btn-primary" style="margin-top: var(--space-md);">
+                        Learn More About DSOG <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="value-proposition">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Why Choose Us</span>
+                <h2>What Makes <span class="text-gradient">DSOG Different</span></h2>
+                <p class="lead">We provide more than just training - we offer a complete entrepreneurial journey from learning to enterprise.</p>
+            </div>
+            
+            <div class="value-grid">
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h4>Hands-on Experience</h4>
+                    <p>We believe in learning by doing. Our events and opportunities provide practical, real-world business experience.</p>
+                </div>
+                
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h4>Strong Community</h4>
+                    <p>Join a network of like-minded entrepreneurs, mentors, and industry experts who support each other's growth.</p>
+                </div>
+                
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h4>Clear Pathway</h4>
+                    <p>From training to startup opportunities, we provide a clear pathway to turn your entrepreneurial dreams into reality.</p>
+                </div>
+                
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h4>Expert Guidance</h4>
+                    <p>Learn from successful entrepreneurs and industry experts who have walked the path before you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Start Your Journey</span>
+                <h2>Ready to <span class="text-gradient">Empower Your Business?</span></h2>
+                <p class="lead">Join DSOG today and access the training, events, and opportunities you need to build a successful enterprise.</p>
+            </div>
+            
+            <div class="hero-buttons">
+                <a href="https://wa.me/254733737983" target="_blank" class="btn btn-primary btn-large">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Inquiry
+                </a>
+                <a href="events.html" class="btn btn-secondary btn-large">
+                    <i class="fas fa-calendar-alt"></i> Join Next Event
+                </a>
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-item animate-on-scroll">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div>
+                        <div class="text-small">General Inquiries</div>
+                        <div class="text-medium">0733 737 983</div>
+                    </div>
+                </div>
+                
+                <div class="contact-item animate-on-scroll">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </div>
+                    <div>
+                        <div class="text-small">Email Application</div>
+                        <div class="text-medium">office.dsog@gmail.com</div>
+                    </div>
+                </div>
+                
+                <div class="contact-item animate-on-scroll">
+                    <div class="contact-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div>
+                        <div class="text-small">Event Registration</div>
+                        <div class="text-medium">events@dsog.org</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="https://i.postimg.cc/kMZ1jTww/Untitled-design-4-removebg-preview.png" 
+                         alt="DSOG" 
+                         class="footer-logo">
+                    <p>Empowering businesses, startups, and young entrepreneurs through transformative training, impactful events, and practical startup opportunities.</p>
+                    <div class="mission-badge" style="margin-top: var(--space-md); background: rgba(255,255,255,0.1); color: white;">
+                        <i class="fas fa-bullseye"></i> EMPOWERING ENTREPRENEURS
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="enterprise.html">Enterprise</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="training.html">Training</a></li>
+                        <li><a href="startups.html">Startup Opportunities</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li>Entrepreneurship Training</li>
+                        <li>Business Events & Workshops</li>
+                        <li>Startup Incubation</li>
+                        <li>Professional Development</li>
+                        <li>Business Networking</li>
+                        <li>Enterprise Support</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> 0733 737 983</li>
+                        <li><i class="fas fa-envelope"></i> office.dsog@gmail.com</li>
+                        <li><i class="fab fa-whatsapp"></i> WhatsApp Business</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> DSOG - Empowering Businesses, Startups & Young Entrepreneurs. All rights reserved.</p>
+                <p style="margin-top: var(--space-sm); font-size: 0.85rem;">Professional Training • Entrepreneurship Events • Startup Opportunities • Enterprise Development</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🚀 DSOG - Empowering Entrepreneurs Version 7.0.0');
+            
+            // Theme Toggle
+            const themeToggle = document.getElementById('themeToggle');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+            
+            // Get saved theme or system preference
+            const savedTheme = localStorage.getItem('theme');
+            const systemTheme = prefersDark.matches ? 'dark' : 'light';
+            const initialTheme = savedTheme || systemTheme;
+            
+            // Set initial theme
+            document.documentElement.setAttribute('data-theme', initialTheme);
+            updateThemeIcon(initialTheme);
+            
+            // Toggle theme on button click
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+                
+                // Apply theme transition
+                document.body.style.transition = 'background-color 0.3s ease, color 0.3s ease';
+                document.documentElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                updateThemeIcon(newTheme);
+                
+                // Remove transition after animation
+                setTimeout(() => {
+                    document.body.style.transition = '';
+                }, 300);
+            });
+            
+            // Listen for system theme changes
+            prefersDark.addEventListener('change', (e) => {
+                if (!localStorage.getItem('theme')) {
+                    const newTheme = e.matches ? 'dark' : 'light';
+                    document.documentElement.setAttribute('data-theme', newTheme);
+                    updateThemeIcon(newTheme);
+                }
+            });
+            
+            // Update theme icon
+            function updateThemeIcon(theme) {
+                const icon = themeToggle.querySelector('i');
+                if (theme === 'dark') {
+                    icon.className = 'fas fa-sun';
+                    themeToggle.setAttribute('aria-label', 'Switch to light theme');
+                } else {
+                    icon.className = 'fas fa-moon';
+                    themeToggle.setAttribute('aria-label', 'Switch to dark theme');
+                }
+            }
+
+            // Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navLinks = document.getElementById('navLinks');
+            
+            if (mobileMenuBtn && navLinks) {
+                mobileMenuBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    navLinks.classList.toggle('active');
+                    const icon = this.querySelector('i');
+                    icon.className = navLinks.classList.contains('active') ? 'fas fa-times' : 'fas fa-bars';
+                    this.setAttribute('aria-expanded', navLinks.classList.contains('active'));
+                    
+                    // Prevent body scroll when menu is open
+                    if (navLinks.classList.contains('active')) {
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        document.body.style.overflow = '';
+                    }
+                });
+
+                // Close menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    if (!navLinks.contains(event.target) && !mobileMenuBtn.contains(event.target) && navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                        mobileMenuBtn.querySelector('i').className = 'fas fa-bars';
+                        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                        document.body.style.overflow = '';
+                    }
+                });
+
+                // Close menu when clicking a link
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (window.innerWidth <= 1024) {
+                            navLinks.classList.remove('active');
+                            mobileMenuBtn.querySelector('i').className = 'fas fa-bars';
+                            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                            document.body.style.overflow = '';
+                        }
+                    });
+                });
+                
+                // Handle window resize
+                window.addEventListener('resize', () => {
+                    if (window.innerWidth > 1024) {
+                        navLinks.classList.remove('active');
+                        mobileMenuBtn.querySelector('i').className = 'fas fa-bars';
+                        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+
+            // Header scroll effect
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // Scroll animations
+            const animatedElements = document.querySelectorAll('.animate-on-scroll');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const delay = entry.target.dataset.delay || 0;
+                        setTimeout(() => {
+                            entry.target.classList.add('animated');
+                        }, delay);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            animatedElements.forEach((element, index) => {
+                element.dataset.delay = index * 100;
+                observer.observe(element);
+            });
+
+            // Smooth scroll for same-page anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    
+                    // Only handle same-page anchors
+                    if (href.startsWith('#') && href !== '#') {
+                        e.preventDefault();
+                        
+                        const targetId = href.substring(1);
+                        const targetElement = document.getElementById(targetId);
+                        
+                        if (targetElement) {
+                            const headerHeight = document.getElementById('header').offsetHeight;
+                            const targetPosition = targetElement.offsetTop - headerHeight - 20;
+                            
+                            window.scrollTo({
+                                top: targetPosition,
+                                behavior: 'smooth'
+                            });
+                            
+                            // Update URL without page reload
+                            history.pushState(null, '', href);
+                        }
+                    }
+                });
+            });
+
+            // Set current year in footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+            // Touch optimizations
+            let lastTouchEnd = 0;
+            document.addEventListener('touchend', (event) => {
+                const now = Date.now();
+                if (now - lastTouchEnd <= 300) {
+                    event.preventDefault();
+                }
+                lastTouchEnd = now;
+            }, false);
+        });
+    </script>
+</body>
+</html>
